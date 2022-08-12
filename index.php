@@ -34,6 +34,18 @@
     foreach($products as $key => $value){
 	    echo "<p>The ".$key." costs $".$value."</p>";
     }
+
+    echo "<h2>Items you can afford</h2>";
+
+    foreach($products as $key => $value){
+        /* An "if" statement tests if a condition is true or false. 
+        If true, it will run the code following it. 
+        If false, it will skip that code and 
+        optionally run code in an "else" statement. */
+        if($value <= $credit ){
+            echo "<p>".$key."</p>"; 
+        }
+    }
     ?>
   </body>
 </html>
