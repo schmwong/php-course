@@ -7,7 +7,18 @@
     <?php
     // Using two forward slashes we create comments in php.
     // Within the php tag, we can insert values into our HTML.
-    echo "<h1>Welcome!</h1>";
+    // echo "<h1>Welcome!</h1>";
+
+    /* We define variables in PHP with a $ sign and then we need 
+    to decide what the datatype for the variable will be. 
+    For a string of text make sure to put the text in quotes. 
+    If the value is a decimal or integer, no quotes are needed. */
+    $name = "PHP Store";
+    $credit = 1000;
+
+    // Using a period (.), we can concatenate text and variables.
+    echo "<h1>Welcome to ".$name."!</h1>";
+    echo "<h2>You have $".$credit." in your wallet.</h2>";
     ?>
   </body>
 </html>
